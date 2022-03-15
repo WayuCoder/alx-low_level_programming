@@ -1,6 +1,6 @@
 #include "holberton.h"
+#include "main.h"
 /**
- * main - main function
  * print_alphabet - prints all the alpha bets in lowercase
  * _putchar - prints putchar
  * Return: return function
