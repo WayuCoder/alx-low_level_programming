@@ -1,15 +1,15 @@
 #include<unistd.h>
-#include<holberton.h>
+#include "holberton.h"
 /**
  * main - main function goes here
  * Return - return function
  */
-void _putchar(void);
+int _putchar(int putchr);
 int main(void)
 {
 char putchr[] = "__putchar";
 int i = 0;
-for (i = 0; i < strlen(putchr); i++)
+for (i = 0; i < 10; i++)
 {
 _putchar(putchr[i]);
 }
