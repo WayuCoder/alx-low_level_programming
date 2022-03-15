@@ -5,6 +5,7 @@
  * _putchar - prints putchar
  * Return: return function
  */
+void print_alphabet(void);
 void print_alphabet(void)
 {
 char alpha = 'a';
