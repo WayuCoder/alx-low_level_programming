@@ -7,7 +7,7 @@
 int _putchar(int putchr);
 int main(void)
 {
-char putchr[] = "__putchar";
+char putchr[] = "_putchar";
 int i = 0;
 for (i = 0; i < 10; i++)
 {
