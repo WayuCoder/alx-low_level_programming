@@ -10,6 +10,9 @@ int main(void)
 char putchr[] = "__putchar";
 int i = 0;
 for (i = 0; i < strlen(putchr); i++)
+{
 _putchar(putchr[i]);
+}
+_putchar('\n');
 return (0);
 }
