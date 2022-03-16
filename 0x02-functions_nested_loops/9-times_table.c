@@ -1,6 +1,4 @@
-#include "holberton.h"
-
-int _putchar(char c);
+#include "holberton.h" 
 
 /**
  * print_times_table - print the times table until n
