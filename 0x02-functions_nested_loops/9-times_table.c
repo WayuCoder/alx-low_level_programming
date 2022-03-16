@@ -1,5 +1,5 @@
+#include "main.h"
 #include "holberton.h" 
-
 /**
  * print_times_table - print the times table until n
  *
@@ -8,7 +8,7 @@
  * Return: No return
  */
 
-void print_times_table(int n)
+int times_table(int n)
 {
 int i;
 int j;

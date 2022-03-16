@@ -1,5 +1,6 @@
 #include "main.h"
-void times_table(void);
+#include <stdio.h>
+
 /**
  * main - check the code
  *
@@ -7,6 +8,9 @@ void times_table(void);
  */
 int main(void)
 {
-  times_table();
+  int n;
+
+  n = add(89, 9);
+  printf("%d\n", n);
   return (0);
 }
