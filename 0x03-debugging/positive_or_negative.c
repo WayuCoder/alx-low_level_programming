@@ -2,26 +2,24 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - main function;
+ * positive_or_negative - test if the number is positive or negative;
  * Return:return 0
  */
 /* betty style doc for function main goes there */
-int main(void)
+int  positive_or_negative(int n)
 {
-  int n;
-  srand(time(0));
-  n = rand() - RAND_MAX / 2;
   if (n == 0)
     {
-      printf("is zero\n");
+     return printf("%d is zero\n",n);
     }
   else if (n < 0)
     {
-      printf("is negative\n");
+      return printf("%d is negative\n",n);
     }
   else if (n > 0)
     {
-      printf("is positive\n");
+      return printf("%d is positive\n",n);
     }
-  return (0);
+  else
+    return printf("undifine input");
 }
