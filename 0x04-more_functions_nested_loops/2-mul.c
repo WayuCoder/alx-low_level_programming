@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 /**
  * mul - check the code for Holberton School students.
  * @a: character a
@@ -8,6 +8,5 @@
 
 int mul(int a, int b)
 {
-int mult = a * b;
-return (mult);
+return (a * b);
 }
