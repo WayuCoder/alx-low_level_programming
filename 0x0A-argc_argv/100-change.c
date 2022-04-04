@@ -1,52 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * checkString - check the code for Holberton School students.
- *@Str: character count
- * Return: Always 0.
- */
-int checkString(char *Str)
-{
-char *ptr = Str;
-while (*ptr)
-{
-if (!(*ptr >= 0x30 && *ptr <= 0x39))
-{
-return (0);
-}
-ptr++;
-}
-return (1);
-}
-/**
- * main - check the code for Holberton School students.
- *@argc: character count
- *@argv: array
- * Return: Always 0.
+ * main - prints minimof money
+ * @argc: int
+ * @argv: array of strings
+ * Return: number of coins
  */
 int main(int argc, char *argv[])
 {
-int sum, i;
-sum = 0;
-if (argc < 1)
-{
-printf("0\n");
-return (1);
-}
-i = 1;
-while (i < argc)
-{
-if (checkString(argv[i]))
-{
-sum += atoi(argv[i]);
-}
-else
+int cash;
+int count;
+count = 0;
+if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-i++;
+cash = atoi(argv[1]);
+for (count = 0; cash > 0; count++)
+{
+if (cash >= 25)
+cash = cash - 25;
+else if (cash >= 10 && cash < 25)
+cash = cash - 10;
+else if (cash >= 5 && cash < 10)
+cash = cash - 5;
+else if (cash >= 2 && cash < 5)
+cash = cash - 2;
+else
+cash = cash - 1;
 }
-printf("%d\n", sum);
+printf("%d\n", count);
 return (0);
 }
