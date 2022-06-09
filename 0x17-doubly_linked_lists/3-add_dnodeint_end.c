@@ -26,6 +26,7 @@ src = src->next;
 }
 src->next = temp;
 temp->prev = src;
-temp->next = NULL;temp->n = n;
+temp->next = NULL;
+temp->n = n;
 return (temp);
 }
